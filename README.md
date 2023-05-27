@@ -22,4 +22,4 @@
 4) Average Tank Sales (table holds the 5-week average for each day)
 - GET /api/avg-tank-sales?tank_id={tank_id}
 - POST /api/avg-tank-sales
-- GET, UPDATE, DELETE /api/tank-sales/id 
+- GET, UPDATE, DELETE /api/avg-tank-sales/id 
