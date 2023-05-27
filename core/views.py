@@ -61,6 +61,7 @@ class TankVolumeRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
         queryset = (
             TankVolume
             .objects
+            .filter_by_tank(tank_id=self.request.query_params.get('tank_id', None))
             .sort(
                 order=self.request.query_params.get('order_by', None),
                 col=self.request.query_params.get('sort_by', None),
